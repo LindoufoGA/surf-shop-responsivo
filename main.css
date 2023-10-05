@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.container h1 {
+    font-style: italic;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .container a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 32px;
+}
+
+header {
+    color: #fff;
+    background-color: rgb(1, 132, 255);
+    height: 48px;
+}
+
+.container main {
+    display: flex;
+    padding-top: 48px;
+}
+
+.container main img {
+    height: 300px;
+}
+
+.container .sobre {
+    padding-left: 32px;
+}
+
+.container .sobre h2 {
+    border-bottom: 3px solid rgb(1, 132, 255);
+    padding-bottom: 18px;
+    font-style: italic;
+    color: rgb(1, 132, 255);
+}
+
+.container .sobre p {
+    padding-top: 32px;
+}
+
+section {
+    padding-top: 62px;
+}
+
+section h2{
+    border-bottom: 3px solid rgb(1, 132, 255);
+    padding-bottom: 18px;
+    font-style: italic;
+    color: rgb(1, 132, 255);
+}
+
+.produtos {
+    padding-top: 42px;
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+}
+
+.conteudo{
+    max-width: 200px;
+    width: 100%;
+}
+
+.conteudo img {
+    height: 200px;
+}
+
+.conteudo span {
+    font-size: 14px;
+}
+
+.conteudo h3 {
+    padding: 16px 0;
+}
+
+.conteudo button {
+    color: #fff;
+    background-color: rgb(1, 132, 255);
+    height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin: 12px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        display: block;
+    }
+
+    header {
+        color: #fff;
+        background-color: rgb(1, 132, 255);
+        height: 64px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        padding-top: 12px;
+    }
+
+    .container main {
+        display: block;
+    }
+
+    .container .sobre h2 {
+        font-size: 24px;
+        padding-top: 24px;
+    }
+
+    .container .sobre p {
+    padding-top: 18px;
+    font-size: 18px;
+    }
+
+    .container main img {
+        width: 100%;
+        padding-left: 32px;
+    }
+
+    section h2 {
+        padding-bottom: 14px;
+        font-style: italic;
+        color: rgb(1, 132, 255);
+        padding-left: 24px;
+        font-size: 24px;
+    }
+
+    .produtos {
+        padding-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3,32.3%);
+        column-gap: 1%;
+    }
+
+    .conteudo img {
+        height: 100px;
+    }
+    
+    .conteudo span {
+        font-size: 14px;
+    }
+    
+    .conteudo h3 {
+        padding: 12px 0;
+        font-size: 18px;
+    }
+
+    .conteudo button {
+        color: #fff;
+        background-color: rgb(1, 132, 255);
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 2px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container main{
+        display: block;
+        width: 90%;
+    }
+
+    header {
+        height: 68px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+    
+    .container nav a {
+        font-size: 18px;
+    }
+
+    .sobre h2 {
+        font-size: 24px;
+    }
+
+    .container main img {
+        width: 100%;
+        padding-left: 32px;
+    }
+
+    .sobre p {
+        font-size: 18px;
+    }
+
+    .produtos {
+        padding-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+    }
+
+    .conteudo {
+        margin: 0 60px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .conteudo img {
+        height: 280px;
+    }
+
+    .conteudo h3 {
+        font-size: 18px;
+    }
+
+    .conteudo span {
+        font-size: 16px;
+    }
+
+    .conteudo button {
+        font-size: 14px;
+        height: 32px;
+        width: 100%;
+    }
+}
